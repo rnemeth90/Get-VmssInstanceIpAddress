@@ -1,5 +1,20 @@
-
-
+<#
+    .SYNOPSIS
+    Get the IP addresses of VMSS instances
+    .PARAMETER VmssName
+    The name of the VMSS
+    .PARAMETER ResourceGroupName
+    The resource group of the VMSS
+    .NOTES
+     Author: Ryan Nemeth - Ryan@geekyryan.com
+     Site: http://www.geekyryan.com
+    .LINK
+     http://www.geekyryan.com
+    .DESCRIPTION
+     Version 1.0
+    .EXAMPLE
+     Get-VmssInstanceIpAddress.ps1 -VmssName my-vmss -ResourceGroupName myResourceGroup
+#>
 
 [CmdletBinding()]
 param (
