@@ -24,6 +24,8 @@ param (
     [String]$ResourceGroupName
 )
 
+Connect-AzAccount
+
 $instances = Get-AzVmssVM -ResourceGroupName $ResourceGroupName -VMScaleSetName $VmssName
 $ssNicName = ($instances[0].NetworkProfile.NetworkInterfaces[0].Id).Split('/')[-1]
 
